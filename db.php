@@ -26,7 +26,7 @@ $products = [
 
 $users = [
     "users_registered" => [
-        new Users(1, "Gianluca", "prova@prova.gmail.it", true ),
+        new Users(1, "Gianluca", "prova@prova.gmail.it"),
     ],
 ];
 

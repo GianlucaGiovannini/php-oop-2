@@ -5,13 +5,13 @@ class Users
     public $id;
     public $name;
     public $mail;
-    public $registered;
+    public $registered = true;
 
-    function __construct($id, $name, $mail, $registered)
+    function __construct($id, $name, $mail)
     {
         $this->id = $id;
         $this->name = $name;
         $this->mail = $mail;
-        $this->registered = $registered;
+
     }
 }
