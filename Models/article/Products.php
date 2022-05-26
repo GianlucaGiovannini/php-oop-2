@@ -4,6 +4,7 @@ class Products {
     
         public $id;
         public $name;
+        public $poster = "https://picsum.photos/500";
         public $description;
         public $price;
         public $has_discount = false;
@@ -18,11 +19,17 @@ class Products {
 
     }
 
-    public function setSconto()
+    public function setSconto($user)
     {
-        if($this->has_discount = true) {
-            $this->discount = 10;
+        if($user->registered = true) {
+            $this->has_discount = true;
+            $this->discount = 20;
         }
+    }
+
+    public function getPrice()
+    {
+        return $this->price = $this->price -  ($this->price * $this->discount / 100);
     }
 
 }
