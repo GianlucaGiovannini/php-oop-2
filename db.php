@@ -1,9 +1,10 @@
 <?php
 
-include_once __DIR__ . "/Models/Products.php";
-include_once __DIR__ . "/Models/Games.php";
-include_once __DIR__ . "/Models/Foods.php";
-include_once __DIR__ . "/Models/Accessories.php";
+include_once __DIR__ . "/Models/article/Products.php";
+include_once __DIR__ . "/Models/article/Games.php";
+include_once __DIR__ . "/Models/article/Foods.php";
+include_once __DIR__ . "/Models/article/Accessories.php";
+include_once __DIR__ . "/Models/users/Users.php";
 
 $products = [
     "games" => [
@@ -23,4 +24,11 @@ $products = [
     ],
 ];
 
+$users = [
+    "users_registered" => [
+        new Users(1, "Gianluca", "prova@prova.gmail.it", true ),
+    ],
+];
+
 var_dump($products);
+var_dump($users);

@@ -6,6 +6,8 @@ class Products {
         public $name;
         public $description;
         public $price;
+        public $has_discount = false;
+        public $discount = 0;
 
     function __construct($id, $name, $description, $price)
     {
@@ -13,6 +15,14 @@ class Products {
         $this->name = $name;
         $this->description = $description;
         $this->price = $price;
+
+    }
+
+    public function setSconto()
+    {
+        if($this->has_discount = true) {
+            $this->discount = 10;
+        }
     }
 
 }
