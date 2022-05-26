@@ -12,5 +12,4 @@
 
 </head>
 
-<body>
-
+<body class="bg-dark">

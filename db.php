@@ -25,7 +25,7 @@ $users = [
 
 $login = $_GET["login"];
 $registered = false;
-if ($login == true) {
+if ($login === $users[0]->name) {
     $registered = true;
 }
 
