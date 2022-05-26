@@ -6,6 +6,7 @@ include_once __DIR__ . "/Models/article/Games.php";
 include_once __DIR__ . "/Models/article/Foods.php";
 include_once __DIR__ . "/Models/article/Accessories.php";
 include_once __DIR__ . "/Models/users/Users.php";
+include_once __DIR__ . "/Models/payment/Payments.php";
 
 $products = [
     new Games(1, "palla", "lorem dolor ipsum", 100),
