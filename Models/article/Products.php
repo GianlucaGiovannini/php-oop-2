@@ -1,7 +1,6 @@
 <?php  
 
 class Products {
-    
         public $id;
         public $name;
         public $poster = "https://picsum.photos/500";

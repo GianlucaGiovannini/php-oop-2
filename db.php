@@ -1,6 +1,8 @@
 <?php
 
-
+include_once __DIR__ . "/Models/traits/TraitSupplierGames.php";
+include_once __DIR__ . "/Models/traits/TraitSupplierFoods.php";
+include_once __DIR__ . "/Models/traits/TraitSupplierAccessories.php";
 include_once __DIR__ . "/Models/article/Products.php";
 include_once __DIR__ . "/Models/article/Games.php";
 include_once __DIR__ . "/Models/article/Foods.php";
@@ -19,6 +21,10 @@ $products = [
     new accessories(2, "tiragraffi", "lorem dolor ipsum", 900),
     new accessories(3, "trasportino", "lorem dolor ipsum", 200),
 ];
+
+// var_dump($products);
+// var_dump($products[0]->getSupplierName());
+// var_dump($products[0]->getSupplierCity());
 
 $users = [
     new Users(1, "Gianluca", "prova@prova.gmail.it"),
