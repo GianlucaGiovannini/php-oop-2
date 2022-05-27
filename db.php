@@ -42,3 +42,19 @@ if ($registered === true) {
     }
     // var_dump($products[0]->getPrice());
 }
+
+function multiplication($int)
+{
+  if (!is_int($int)) {
+    throw new Exception('Is not a number');
+  }
+  return $int * 5;
+}
+
+try {
+  multiplication($int);
+} catch (Exception $e) {
+  echo $e->getMessage();
+} 
+
+var_dump(multiplication(5));

@@ -17,7 +17,7 @@
                             <?= $product->description ?>
                             </p>
                             <small>
-                                Fornitore 
+                                Fornitore: 
                                 <?= $product->getSupplierName() ?>
                             </small>
                             <div class="price text-end text-danger">
