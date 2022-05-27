@@ -20,8 +20,13 @@
                                 Fornitore: 
                                 <?= $product->getSupplierName() ?>
                             </small>
+                            <small>
+                                Quantità disponibile:
+                                <?= $product->pieces ?>
+                            </small>
                             <div class="price text-end text-danger">
                                 <?= $product->getPrice() ?> €
+                                
                             </div>
                             
                         </div>
